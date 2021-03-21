@@ -1,10 +1,6 @@
-import { ExecutionContext, Module } from '@nestjs/common';
+import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { GqlExecutionContext, GraphQLModule } from '@nestjs/graphql';
-
-import { getFields, getSelect } from 'helpers/generateSelect';
-
-import { PrismaService } from './prisma.service';
+import { GraphQLModule } from '@nestjs/graphql';
 
 import { PlanModule } from './plan/plan.module';
 import { TodoModule } from './todo/todo.module';
